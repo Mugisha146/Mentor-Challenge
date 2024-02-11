@@ -3,63 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | QR code component</title>
-<style>
-  body {
-  margin: 0;
-  padding: 0;
-  background-color: #b6e6e0ea; /* Gray background */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Make the body cover the entire viewport height */
-}
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #b6e6e0ea; /* Gray background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Make the body cover the entire viewport height */
+    }
 
-.container {
-  background-color: #fff; /* White background */
-  padding: 2%; /* Adjust padding as needed */
-  border-radius: 1%;
-  box-shadow: 0% 0% 2% rgb(255, 252, 252); /* Add a subtle box shadow */
-  max-width: 400px; /* Set maximum width for the container */
-  width: 90%; /* Set width to 90% of the viewport width */
-  text-align: center; /* Center the content horizontally */
-}
+    .container {
+      background-color: #fff; /* White background */
+      padding: 2%; /* Adjust padding as needed */
+      border-radius: 1%;
+      box-shadow: 0% 0% 2% rgb(255, 252, 252); /* Add a subtle box shadow */
+      max-width: 400px; /* Set maximum width for the container */
+      width: 90%; /* Set width to 90% of the viewport width */
+      text-align: center; /* Center the content horizontally */
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em; /* Add vertical spacing between elements */
+    }
 
-.container img {
-  display: block;
-  margin: 0 auto; /* Center the image */
-  width: 100%; /* Adjust image width as needed */
-  height: 25%; /* Maintain aspect ratio */
-}
+    .container img {
+      width: 100%; /* Adjust image width as needed */
+      height: auto; /* Maintain aspect ratio */
+    }
 
-#firsttext{
-  margin: 0 auto; 
-  margin-top: 0.5em;
-  font-size: 1.3em;
-  font-weight: bold;
-  padding: 1em;
-  font-family: 'Courier New', Courier, monospace;
+    #firsttext, #secondtext {
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0; /* Remove default margin */
+      font-size: 1.2em;
+    }
 
-}
+    #firsttext {
+      font-size: 1.3em;
+      font-weight: bold;
+      padding: 1em;
+    }
 
-#secondtext {
-  font-family: 'Courier New', Courier, monospace;
-  margin-bottom: 1.5em;
-  font-size: 1.2em;
-}
-
-
-</style>
+    #secondtext {
+      margin-bottom: 1.5em;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-  <img src="images/image-qr-code.png" alt="QR image">
-  <p id="firsttext">Improve your front-end skills by building projects</p>
-  <p id="secondtext">scan the QR code to visit frontend Mentor and take your coding skills to the next level
-
+  <div class="container">
+    <img src="images/image-qr-code.png" alt="QR image">
+    <p id="firsttext">Improve your front-end skills by building projects</p>
+    <p id="secondtext">Scan the QR code to visit frontend Mentor and take your coding skills to the next level</p>
   </div>
 </body>
 </html>

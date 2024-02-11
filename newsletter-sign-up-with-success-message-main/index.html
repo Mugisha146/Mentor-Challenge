@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tags for responsive design -->
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Linking external stylesheet -->
+  <style>
+    /* Commented out code for attribution */
+    /*.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }*/
+  </style>
+</head>
+<body>
+<div id="container" class="container"> <!-- Main container for the layout -->
+  <div id="left" class="left"> <!-- Left section of the layout -->
+    <div id="left-info"> <!-- Information section on the left -->
+      <h1>Stay update</h1> <!-- Main heading -->
+      <p>Join 60,000+ product managers receiving monthly update on:</p> <!-- Description -->
+      <ul>
+        <li>Product discovery and building what matters</li> <!-- List item 1 -->
+        <li>Measuring to ensure updates are a success</li> <!-- List item 2 -->
+        <li>And much more</li> <!-- List item 3 -->
+      </ul>
+    </div>
+    <form id="form"> <!-- Form for email subscription -->
+      <div class="form-item"> <!-- Form item -->
+      <label for="email">
+        <p>Email address</p> <!-- Label for email input -->
+        <p id="invalid-email" class="invalid-email">Valid emailrequired</p> <!-- Invalid email message -->
+      </label>
+      <input type="email" name="email" id="email" placeholder="email@company.com"> <!-- Email input field -->
+    </div>
+    <div class="form-item">
+      <button type="submit" id="submit-btn">Subscribe to monthly newsletter</button> <!-- Submit button -->
+    </div>
+    </form>
+  </div>
+  <div id="right" class="right"> <!-- Right section of the layout -->
+    <picture>
+      <source media="(max-width:768px)" srcset="assets/images/illustration-sign-up-mobile.svg"> <!-- Source for mobile illustration -->
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="" > <!-- Desktop illustration -->
+    </picture>
+  </div>
+  <div id="confirmed-message" class="confirmed-message"> <!-- Confirmation message section -->
+    <img src="assets/images/icon-success.svg" alt=""> <!-- Success icon -->
+    <h2>Thanks for Subscribing</h2> <!-- Success message heading -->
+    <p>A confrimation email has been sent to <span id="user-email"></span> <!-- Confirmation email message -->
+      Please open it and click the button inside to confrim your subscription</p>
+      <button id="dismiss-message">Dismiss message</button> <!-- Dismiss button -->
+  </div>
+</div>
+  </div>
+  <script src="scripts.js"></script> <!-- Linking external JavaScript file -->
+</body>
+</html>
