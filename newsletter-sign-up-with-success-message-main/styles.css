@@ -18,7 +18,7 @@
 
 /* Body styles */
 body {
-  background-color: var(--charcol-gray); /* Background color using custom property */
+  background-color: rgb(54, 54, 87); /* Background color using custom property */
   min-height: 100vh;
   font-size: 16px;
   line-height: 1.8;
@@ -31,7 +31,7 @@ body {
 .container {
   max-width: 955px;
   margin: 0 auto;
-  background-color: var(--white); /* Background color using custom property */
+  background-color: white; /* Background color using custom property */
   padding: 1.5rem;
   border-radius: 1.5rem;
   display: grid;
@@ -53,18 +53,33 @@ body {
 .left-info h1 {
   font-size: 3.5rem;
   margin-bottom: .5rem;
+  color: rgb(54, 54, 87);
 }
 
+#icon1{
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
 .left-info p,
 .left-info ul {
   margin-bottom: 1.5rem;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .left-info ul li {
   list-style-image: url(assets/images/icon-list.svg); /* Using custom list-style image */
   list-style-position: inside;
 }
-
+h1{
+  font-size: 52px;
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+#form{
+  margin-top: 1.5em;
+margin-bottom: 1.5em;
+}
+}
 /* Form item styles */
 .form-item {
   display: flex;
